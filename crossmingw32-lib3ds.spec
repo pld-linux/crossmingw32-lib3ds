@@ -3,7 +3,7 @@ Summary:	The 3D Studio File Format Library - Mingw32 cross version
 Summary(pl):	Biblioteka obs³uguj±ca format plików 3D Studio - wersja skro¶na dla Mingw32
 Name:		crossmingw32-%{realname}
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/lib3ds/%{realname}-%{version}.tar.gz
@@ -26,6 +26,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		__cc		%{target}-gcc
 %define		__cxx		%{target}-g++
+
+%ifarch alpha sparc sparc64 sparcv9
+%define		optflags	-O2
+%endif
 
 %description
 lib3ds is a free alternative to Autodesk's 3DS File Toolkit for
