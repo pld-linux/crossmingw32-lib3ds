@@ -8,7 +8,6 @@ License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/lib3ds/%{realname}-%{version}.tar.gz
 # Source0-md5:	3a7f891d18af0151876b98bc05d3b373
-Patch0:		%{name}-shared.patch
 URL:		http://lib3ds.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -51,7 +50,6 @@ Group:		Applications/Emulators
 
 %prep
 %setup -q -n %{realname}-%{version}
-#%patch0 -p1
 
 %build
 CC=%{target}-gcc ; export CC
