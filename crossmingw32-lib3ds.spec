@@ -63,7 +63,7 @@ RANLIB=%{target}-ranlib ; export RANLIB
 LDSHARED="%{target}-gcc -shared" ; export LDSHARED
 TARGET="%{target}" ; export TARGET
 
-tail -116 aclocal.m4 | head -102 > acinclude.m4
+tail -n 116 aclocal.m4 | head -n 102 > acinclude.m4
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
