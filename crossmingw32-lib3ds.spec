@@ -3,7 +3,7 @@ Summary:	The 3D Studio File Format Library - Mingw32 cross version
 Summary(pl):	Biblioteka obs³uguj±ca format plików 3D Studio - wersja skro¶na dla Mingw32
 Name:		crossmingw32-%{realname}
 Version:	1.2.0
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/lib3ds/%{realname}-%{version}.tar.gz
@@ -76,6 +76,9 @@ tail -n 116 aclocal.m4 | head -n 102 > acinclude.m4
 %configure \
 	--host=%{_host} \
 	--target=%{target}
+
+# glut is broken
+echo "int main(){}" > examples/player.c
 
 %{__make}
 
