@@ -69,7 +69,9 @@ tail -116 aclocal.m4 | head -102 > acinclude.m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--host=%{_host} \
+	--target=%{target}
 
 %{__make}
 
