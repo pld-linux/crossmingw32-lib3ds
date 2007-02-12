@@ -1,6 +1,6 @@
 %define		realname	lib3ds
 Summary:	The 3D Studio File Format Library - Mingw32 cross version
-Summary(pl.UTF-8):   Biblioteka obsługująca format plików 3D Studio - wersja skrośna dla Mingw32
+Summary(pl.UTF-8):	Biblioteka obsługująca format plików 3D Studio - wersja skrośna dla Mingw32
 Name:		crossmingw32-%{realname}
 Version:	1.2.0
 Release:	4
@@ -44,7 +44,7 @@ tworzenia filtrów importujących i eksportujących 3DS.
 
 %package dll
 Summary:	%{realname} - DLL library for Windows
-Summary(pl.UTF-8):   %{realname} - biblioteka DLL dla Windows
+Summary(pl.UTF-8):	%{realname} - biblioteka DLL dla Windows
 Group:		Applications/Emulators
 
 %description dll
