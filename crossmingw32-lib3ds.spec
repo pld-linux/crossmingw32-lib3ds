@@ -1,6 +1,6 @@
 %define		realname	lib3ds
 Summary:	The 3D Studio File Format Library - Mingw32 cross version
-Summary(pl):	Biblioteka obs硊guj眂a format plik體 3D Studio - wersja skro秐a dla Mingw32
+Summary(pl.UTF-8):   Biblioteka obs艂uguj膮ca format plik贸w 3D Studio - wersja skro艣na dla Mingw32
 Name:		crossmingw32-%{realname}
 Version:	1.2.0
 Release:	4
@@ -37,20 +37,20 @@ lib3ds is a free alternative to Autodesk's 3DS File Toolkit for
 handling 3DS files. It's main goal is to simplify the creation of 3DS
 import and export filters.
 
-%description -l pl
-lib3ds to wolnodost阷na alternatywa dla 3DS File Toolkit Autodeska do
-obs硊gi plik體 3DS. G丑wnym celem biblioteki jest uproszczenie
-tworzenia filtr體 importuj眂ych i eksportuj眂ych 3DS.
+%description -l pl.UTF-8
+lib3ds to wolnodost臋pna alternatywa dla 3DS File Toolkit Autodeska do
+obs艂ugi plik贸w 3DS. G艂贸wnym celem biblioteki jest uproszczenie
+tworzenia filtr贸w importuj膮cych i eksportuj膮cych 3DS.
 
 %package dll
 Summary:	%{realname} - DLL library for Windows
-Summary(pl):	%{realname} - biblioteka DLL dla Windows
+Summary(pl.UTF-8):   %{realname} - biblioteka DLL dla Windows
 Group:		Applications/Emulators
 
 %description dll
 %{realname} - DLL library for Windows.
 
-%description dll -l pl
+%description dll -l pl.UTF-8
 %{realname} - biblioteka DLL dla Windows.
 
 %prep
