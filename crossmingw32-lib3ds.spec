@@ -5,7 +5,7 @@ Name:		crossmingw32-%{realname}
 Version:	1.2.0
 Release:	4
 License:	LGPL
-Group:		Libraries
+Group:		Development/Libraries
 Source0:	http://dl.sourceforge.net/lib3ds/%{realname}-%{version}.tar.gz
 # Source0-md5:	3a7f891d18af0151876b98bc05d3b373
 URL:		http://lib3ds.sourceforge.net/
@@ -22,8 +22,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		target		i386-mingw32
 %define		target_platform	i386-pc-mingw32
 %define		arch		%{_prefix}/%{target}
-%define		gccarch		%{_prefix}/lib/gcc-lib/%{target}
-%define		gcclib		%{_prefix}/lib/gcc-lib/%{target}/%{version}
 
 %define		__cc		%{target}-gcc
 %define		__cxx		%{target}-g++
